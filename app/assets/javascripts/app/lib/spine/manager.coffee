@@ -25,7 +25,7 @@ class Spine.Manager extends Spine.Module
   deactivate: ->
     @trigger('change', false, arguments...)
 
-  # Private
+# Private
 
   change: (current, args...) ->
     for cont in @controllers when cont isnt current

@@ -1,11 +1,12 @@
-default: &default
-  cloud_storage:
-    bucket: tidy-layout-9458
-    access_key_id: GOOGDWND4VNWJKWCOYZ7
-    secret_access_key: CWEsYcI7B3/QmLkwqgsWPuTaTtHovZl3Zx9/T6QK
-
-development:
-  <<: *default
-
-production:
-  <<: *default
+{
+  "type": "service_account",
+  "project_id": "river-176215",
+  "private_key_id": "b869de1fd0c46b1aab38fd05d6bb415ea3714dcd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCu0HDqxgKD0J6F\nxrQxikNoQEYG8Op1D/hGmujsSHu82eoNjskliVrrFkm96kLDd+beTTsTyJgik5lA\nhIP0I/HCHto9PGpqn9TGkO/v7w6wDjYsSSekJPEYhzGQsaQosZ7X5QECLLumEAJU\n6JxFQTzt2xd947zTzmDSfsBCAaY8ASO8BG5H2o5BqSJA9ym/6ecJdYJ+BJjymM4O\ntdWofs1rUFlf6WSntqdWChVrLFaE48devVR+ek+aCml4/IzNaKLiEtgeeffgMxQJ\n2dH1OExLOMzSZLvKzQJPDJiDrBmiqKTSLVV1vvx7FBDxcDJYFtCAzkL2xVyA+0je\nwiezzmdzAgMBAAECggEASC8m6TLBOBfNVXUC1BABHIupvtT9I0BoZxMxSdv2SDl9\nRYLnuRm6Eqe95G9WiSs6CCJA2j7y3xguaG8vo4CyI9OkjzOix4tfC20uvlbqrDT6\nFphQh51/dn7grxxDKlCJxCE6JOE+zOgAZno0iP5Sv+6/iQqgXp9x6IlRLxBKSa0J\nO8F6rS/2vM0ZhVGWqTxQix4/At69gnWqdcW4O8FytRp969WRt4cCvkdjNchvVTrW\n/yWnRe1YWN7X7NyeTkpl5l0Vaun5mk8Pu38A1/s+fBkQylMOw4ex0sMunm10vCNB\nmWPP9LUTKCCCdF9psHZZBf1l4FbM68qbiyDC3PqywQKBgQDpcogMBrhDEODAIpKX\ndwPAf/orSFcWOTuKmOtBf+OcEpnlLiHR1wZeD0AKGaaSk3bm+V/LkKQgC9J8kmZU\n+cfBiSS0xS1USYTnIsA84Ggi2U0DIGNVTzP97GKtCCIsp/WUMP7BHaKloihvW0em\n9qU08h7f6f4qbfgN3pKWMYwUswKBgQC/s9UavFpeQSoGkiwFJ1cTa01Hbe3L+G/P\ne1740TkczcXUrY7k0VWf2KttX6/5euGYhjRAoq5ckFmRHSCsDWJWviDGQiR407bd\nLIKNIWAGL0GkfsRlqLGRKe/sqzOyZdQdoE2SWRNIW4g8InW8p2UY1jjMZygZx8D7\n7xCvv/1CQQKBgAQ08SiuUlG7EyHDPbsHBQVKCRsQkakv3NfRi6PBhzt/xlAv9aIP\nauj1A2VrMuo/SAw/gC9t6tc8/00JYlizq5rcOtIbH4b+UCvOH4K5VIcUPWQKCGA4\nLiqsQNb3Z45AdJd4Do8yVoT/mBTxoyfqF+4NUuscD116X9b4JNIaEHkrAoGASytW\n6q7kuITQ19bFUBgG+uReXx3p2stF/JOhv+s6e+LsKeMMXwj+jDlHrxGQTUEz6Lzn\nDFk+CanIlTBYuV5eKylObK9O4doSoFNtta1am9I36SqUFFC7n/JT0/elw9ROAnfz\nMumeuAa8OuhARoNVDxIhH3VrsgAz2hX58xBTXIECgYACTItnU50hkKGfuyaujHBJ\ncqk8CqJCYKrapKkTWNw/rEMRB0dP0q3XnUixvUa5jLv8knFQANk6ULiBdLutLpH/\nHjLWz3wsNSNBcVtQ6LRBAL9wb3MRchvHuCLN7UCVFiYEhlGefAGC62FD/rIV8+pN\nzirqBxShTOzlIkNPFJHQIA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "testing@river-176215.iam.gserviceaccount.com",
+  "client_id": "101629917712721334622",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/testing%40river-176215.iam.gserviceaccount.com"
+}

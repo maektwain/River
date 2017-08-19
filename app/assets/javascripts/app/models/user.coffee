@@ -1,5 +1,5 @@
 class App.User extends App.Model
-  @configure 'User', 'login', 'firstname', 'lastname', 'email', 'web', 'password', 'phone', 'fax', 'mobile', 'street', 'zip', 'city', 'country', 'organization_id', 'department', 'note', 'role_ids', 'group_ids', 'active', 'invite', 'signup', 'updated_at'
+  @configure 'User', 'login', 'firstname', 'lastname', 'email', 'web', 'password', 'phone', 'fax', 'mobile', 'street', 'zip', 'city', 'country', 'organization_id', 'department', 'note','walletAddress', 'role_ids', 'group_ids', 'active', 'invite', 'signup', 'updated_at'
   @extend Spine.Model.Ajax
   @url: @apiPath + '/users'
 
@@ -12,6 +12,7 @@ class App.User extends App.Model
     { name: 'organization_id',  display: 'Organization',  tag: 'select',   multiple: false, nulloption: true, null: true, relation: 'Organization', signup: false, info: true, invite_customer: true },
     { name: 'password',         display: 'Password',      tag: 'input',    type: 'password', limit: 50,  null: true, autocomplete: 'new-password', signup: true, },
     { name: 'note',             display: 'Note',          tag: 'textarea', note: 'Notes are visible to agents only, never to customers.', limit: 250, null: true, info: true, invite_customer: true },
+    { name: 'walletAddress',    display: 'Wallet Address',tag: 'input',    type:'text',      limit:100,  null: true,  signup: true,},
     { name: 'role_ids',         display: 'Permissions',   tag: 'user_permission', null: false, invite_agent: true, invite_customer: true, item_class: 'checkbox' },
     { name: 'active',           display: 'Active',        tag: 'active',   default: true },
     { name: 'created_by_id',    display: 'Created by',    relation: 'User', readonly: 1 },

@@ -1,0 +1,4 @@
+<div class="page-header-meta">
+  <% if @webcamSupport: %>
+    <div class="btn btn--success js-openCamera"><%- @T('Camera') %></div>
+  <% end %>

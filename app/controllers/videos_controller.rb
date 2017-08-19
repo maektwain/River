@@ -39,7 +39,7 @@ class VideosController < ApplicationController
     if params[:full]
       assets = {}
       item_ids = []
-      users.each { |item|
+      videos.each { |item|
         item_ids.push item.id
         assets = item.assets(assets)
       }
@@ -50,14 +50,48 @@ class VideosController < ApplicationController
       return
     end
 
-    videos.all = []
-
+    videos_all = []
+    user_id = UserInfo.current_user_id
     videos.each { |video|
 
-      videos_all.push Video.lookup(user_id: user_id)
+      videos_all.push Video.find_by_user_id(user_id)
 
     }
     render json: videos_all, status: :ok
+  end
+
+
+  #@path [POST] /videos
+  #
+  #@summary Creates a video record for the user and extracts values and converts it into ticket if processed succesfully
+  #
+  #@parameter Video(required,body)
+
+
+  def create
+
+    if !params[:file]
+      render json: { error: 'file key is missing' }, status: :unprocessable_entity
+      return
+    end
+
+    #check hash of the file
+
+
+    path = File.open params[:file].tempfile
+
+     video = Video.new(
+                      user_id: UserInfo.current_user_id,
+               video_storageUrl: path.to_path
+      )
+
+
+
+    video.save!
+
+    render json: video, status: :created
+
+
   end
 
 

@@ -27,6 +27,11 @@ group :assets do
   gem 'eco'
 end
 
+
+
+gem 'google-cloud'
+gem  'google-cloud-video_intelligence'
+
 gem 'autoprefixer-rails'
 
 gem 'doorkeeper'
@@ -48,6 +53,8 @@ gem 'koala'
 gem 'mail'
 gem 'valid_email2'
 gem 'htmlentities'
+
+gem 'streamio-ffmpeg'
 
 gem 'mime-types'
 
@@ -84,6 +91,9 @@ gem 'zendesk_api'
 # event machine
 gem 'eventmachine'
 gem 'em-websocket'
+
+gem 'jsonrpc-client' ,:path =>"/Users/saransh/jsonrpc-client/"
+
 
 gem 'diffy'
 

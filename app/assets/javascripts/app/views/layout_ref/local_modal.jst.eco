@@ -231,6 +231,7 @@
                 
                 
               </div>
+
               <div class="controls"><div class=" checkbox">
 
               <label><input type="checkbox" value="1" name="role_ids"> Admin - To configure your system.</label>
@@ -308,14 +309,14 @@
         </div>
         <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="profileAction">
           <li role="presentation"><a role="menuitem" tabindex="-1">Kontaktdaten bearbeiten</a>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Änderungsprotokoll</a>
-          <li role="presentation"><a role="menuitem" tabindex="-1">Benutzer zusammenführen</a>
-          <li role="presentation"><a role="menuitem" tabindex="-1">Benutzer löschen</a>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">?nderungsprotokoll</a>
+          <li role="presentation"><a role="menuitem" tabindex="-1">Benutzer zusammenf?hren</a>
+          <li role="presentation"><a role="menuitem" tabindex="-1">Benutzer l?schen</a>
         </ul>
       </div>
       <div class="avatar size-80" style="background-image: url(https://pbs.twimg.com/profile_images/1216362658/DSC_0084-p_bigger.jpg)"></div>
       <h1>Doreen Kubiak</h1>
-      <div class="profile-subtitle">Steuerbüro C. Kaik</div>
+      <div class="profile-subtitle">Steuerb?ro C. Kaik</div>
     </div>
     <div class="profile-section">
       <div class="profile-details  horizontal wrap">
@@ -325,7 +326,7 @@
         </div>
         <div class="profile-detailsEntry">
           <label>Organization</label>
-          Steuerbüro C. Kaik
+          Steuerb?ro C. Kaik
         </div>
         <div class="profile-detailsEntry">
           <label>Web</label>
@@ -349,7 +350,7 @@
         </div>
         <div class="profile-detailsEntry">
           <label>Land</label>
-          Österreich
+          ?sterreich
         </div>
       </div>
     </div>
@@ -357,7 +358,7 @@
       <!-- if user has organization -->
       <div class="tabs tabs--big">
         <div class="tab js-userTickets active">Tickets von Doreen Kubiak</div>
-        <div class="tab js-organizationTickets">Tickets von Steuerbüro C. Kaik</div>
+        <div class="tab js-organizationTickets">Tickets von Steuerb?ro C. Kaik</div>
       </div>
       <!-- endif -->
       <div class="profile-ticketLists">
@@ -367,7 +368,7 @@
             <div class="mood icon supergood-state"></div>
             Keine offenen Tickets
           </div>
-          <a href="#">Alle Tickets von Doreen Kubiak …</a>
+          <a href="#">Alle Tickets von Doreen Kubiak ?</a>
         </div>
         <div class="profile-ticketList">
           <label>Bearbeitete Tickets (12)</label>
@@ -405,7 +406,7 @@
                 <div class="time">2 hour ago</div>
               </div>
           </ol>
-          <a href="#">Alle Tickets von Steuerbüro C. Kaik …</a>
+          <a href="#">Alle Tickets von Steuerb?ro C. Kaik ?</a>
         </div>
       </div>
     </div>
@@ -424,7 +425,7 @@
           <div class="stat-all-tickets icon"></div>
         </div>
         <!-- 
-          Achtung: hier müssen wir schauen, dass wir das Widget genauso verwenden wie im Dashboard. Sonst gibt's Verwirrung.
+          Achtung: hier m?ssen wir schauen, dass wir das Widget genauso verwenden wie im Dashboard. Sonst gibt's Verwirrung.
         -->
         <div class="stat-label">Tickets of my Group: 78 of 234</div>
         <div class="stat-detail">Average: 22%</div>
@@ -461,7 +462,7 @@
               <div class="stat-bar primary" style="height: 46%"></div>
               <div class="stat-bar secondary" style="height: 21%"></div>
             </div>
-            <div class="stat-label">Mär</div>
+            <div class="stat-label">M?r</div>
           </div>
           <div class="stats-row">
             <div class="stat-bars">
