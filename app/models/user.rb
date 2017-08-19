@@ -46,7 +46,7 @@ class User < ApplicationModel
   before_validation :check_name, :check_email, :check_login, :ensure_uniq_email, :ensure_password, :ensure_roles, :ensure_identifier
   before_create   :check_preferences_default, :validate_roles, :domain_based_assignment, :set_locale
   before_update   :check_preferences_default, :validate_roles, :reset_login_failed
-  after_create    :avatar_for_email_check, :createWalletAddress
+  after_create    :avatar_for_email_check, #:createWalletAddress
   after_update    :avatar_for_email_check
   after_destroy   :avatar_destroy, :user_device_destroy
 
@@ -992,24 +992,24 @@ raise 'Minimum one user need to have admin permissions'
     true
   end
 
-  def createWalletAddress
-
-
-    connection = create_connect('multichainrpc','aGdvLSLsnuSwP9t1RtVm8jCceyqeo3L4NTCH35f54DT')
-
-
-    client = create_client("http://localhost:7748",connection)
-
-    address = client.getnewaddress
-
-    update_column(:walletAddress, address)
-    cache_delete
-    true
-
-
-
-
-  end
+  # def createWalletAddress
+  #
+  #
+  #   connection = create_connect('multichainrpc','aGdvLSLsnuSwP9t1RtVm8jCceyqeo3L4NTCH35f54DT')
+  #
+  #
+  #   client = create_client("http://localhost:7748",connection)
+  #
+  #   address = client.getnewaddress
+  #
+  #   update_column(:walletAddress, address)
+  #   cache_delete
+  #   true
+  #
+  #
+  #
+  #
+  # end
 
   def avatar_for_email_check
     return true if email.blank?
