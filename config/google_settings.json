@@ -1,0 +1,11 @@
+default: &default
+  cloud_storage:
+    bucket: tidy-layout-9458
+    access_key_id: GOOGDWND4VNWJKWCOYZ7
+    secret_access_key: CWEsYcI7B3/QmLkwqgsWPuTaTtHovZl3Zx9/T6QK
+
+development:
+  <<: *default
+
+production:
+  <<: *default
